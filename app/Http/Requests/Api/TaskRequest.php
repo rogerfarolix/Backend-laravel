@@ -30,14 +30,14 @@ class TaskRequest extends FormRequest
             return [
                 "title" => "required",
                 "description"=>"required",
-                'status' => 'required|in:non débuté,en cours,terminé',
+                'status' => 'required|in:non_debute,en_cours,termine',
                 "published"=> "required|date",
             ];
         }
         return [
             "title" => "required",
             "description"=>"required",
-            'status' => 'required|in:non débuté,en cours,terminé',
+            'status' => 'required|in:non_debute,en_cours,termine',
             "published"=> "required|date",
         ];
     }

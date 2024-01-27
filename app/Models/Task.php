@@ -21,7 +21,12 @@ class Task extends Model
         "status",
         "published"
     ];
-
+    // Define the possible values for the 'status' field
+    public static $statusOptions = [
+        'non_debute' => 'Non débuté',
+        'en_cours' => 'En cours',
+        'termine' => 'Terminé',
+    ];
     /**
     * Get the indexable data array for the model.
     *
